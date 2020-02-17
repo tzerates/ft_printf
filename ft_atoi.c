@@ -6,7 +6,7 @@
 /*   By: tzerates <tzerates@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/06 17:55:33 by tzerates          #+#    #+#             */
-/*   Updated: 2020/02/12 14:00:56 by tzerates         ###   ########.fr       */
+/*   Updated: 2020/02/17 10:36:39 by tzerates         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	ft_atoi(char *str)
 		result = result * 10 + (str[i] - 48);
 		i++;
 	}
-	if (result > 2147483648)
+	if (result > LONG_MAX)
 		return (0);
 	return (result);
 }
